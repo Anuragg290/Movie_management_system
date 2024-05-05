@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Movie Reviews</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/heroic-features.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="navbar1">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
+    <div class="container-fluid" >
+      <a class="navbar-brand" style="color: wheat; font-weight: bolder; font-size:xx-large;margin-left: 20px;">SaRco</a>
+
+      <form class="srch" method="POST" action="../Main/srch.php">
+				<input name="search" type="text" id="searchBar" placeHolder="Search Movies"  onMouseDown="active()"; style="border-radius: 2px; width: 300px; background-color: #00000000; color:wheat; font-weight: bold;">
+        <input type="submit" class= "form-control me-2"name="submit" id="searchBtn" value="🔍";  style="background-color: #383a338f; width: 80px; border-radius: 2px; ">
+			</form>
+    </div>
+      </nav>
+    </div>
+
+
+    <!--	<form class="form-inline" method="post" action="../mdb/srch.php">
+        <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search" onMouseDown="active()"; style="background-color: #383c44; border-color: antiquewhite; border-radius: 2px; color: white;">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>-->
+ <div class="container1">
+  <div class="content-container">
+ <div class="featured-content"
+ style="background: linear-gradient(to bottom, rgba(27, 26, 26, 0.238), #000000), url('dead.jpg');">
+ <img class="featured-title" src="f-t-1.png" alt="">
+ <p class="featured-desc">SaCro is the world's most popular and authoritative source for movie, TV and celebrity content. Find ratings and reviews for the newest movie and TV shows.</p>
+ <button class="featured-button ">Browse</button>
+</div>
+</div>
+ </div>
+
+<div class="bodycolor">
+      <!-- Page Content -->
+      <div class="container">
+
+        <!-- Jumbotron Header -->
+        <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+          <img src="header1.png" class="card-img" alt="...">
+          <div class="card-img-overlay">
+           
+          </div>
+        </div>
+
+        <!-- Page Features -->
+        <div class="row text-center">
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <!-- Poster It Stephen King-->
+              <img class="card-img-top" src="Flim.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">MOVIES</h4>
+                <p class="card-text">Search any Movies details</p>
+              </div>
+              <div class="card-footer">
+                
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   MOVIES
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="../Main/viewM.php">View all Movies</a>
+                    <a class="dropdown-item" href="../Main/addM.php">ADD NEW Movies</a>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Spiderman poster-->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="director.webp" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Director</h4>
+                <p class="card-text"> View all Director</p>
+              </div>
+              <div class="card-footer">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Director
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="../Main/viewD.php">View all Director</a>
+                  <a class="dropdown-item" href="../Main/addD.php">ADD NEW Director</a>
+                 
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!--God of Egypt-->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="Actor.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Actor</h4>
+                <p class="card-text">View all Actor</p>
+              </div>
+              <div class="card-footer">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Actor
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="../Main//viewA.php">View all Actor</a>
+                    <a class="dropdown-item" href="../Main/addA.php">ADD NEW Actor</a>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--The Godfather -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="review.webp" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Reviews</h4>
+                <p class="card-text">Top Rated Movies</p>
+              </div>
+              <div class="card-footer">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Review
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="../Main/review.php">View all Review</a>
+                
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+      </div>
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    
+    <footer class="py-5 bg-dark" style="height: 20px; width: auto; margin-top: 30px;">
+      <div class="container2" style="font-size: 20px; margin-top: 5px;">
+        <p class="m-0 text-center text-white">Copyright &copy; SarCo ™</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script>
+      const menuBtn = document.querySelector(".menu-icon span");
+      const searchBtn = document.querySelector(".search-icon");
+      const cancelBtn = document.querySelector(".cancel-icon");
+      const items = document.querySelector(".nav-items");
+      const form = document.querySelector("form");
+      menuBtn.onclick = ()=>{
+        items.classList.add("active");
+        menuBtn.classList.add("hide");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+      }
+      cancelBtn.onclick = ()=>{
+        items.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        searchBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        form.classList.remove("active");
+        cancelBtn.style.color = "#ff3d00";
+      }
+      searchBtn.onclick = ()=>{
+        form.classList.add("active");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+      }
+   </script>
+
+  </body>
+
+
+  </html>
